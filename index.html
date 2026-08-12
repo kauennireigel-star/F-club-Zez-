@@ -11,7 +11,7 @@
 <body>
     <header>
         <h1>blog Reigel</h1>
-        <p>fã club Zdl</p>
+        <p>fã club Zezé</p>
     </header>
     <main>
         <img src="zeze.png"
@@ -21,11 +21,33 @@
             <h2>meu primeiro post</h2>
             <p class="autora">por Reigel</p>
             <p>Minha vida mas feliz quando eu conheci o Zezé</p>
+            <button>❤️ <span>0</span></button>
+            <button>❤️‍🔥 <span>0</span></button>
         </div>
+
     </main>
     <footer>
         <p>por: Reigel</p>
     </footer>
 </body>
+
+<script>
+    const botoes = document.querySelectorAll("button")
+    botoes.forEach(function(botao) {
+        let curtiu = falso; 
+        botao.addEventListener("click", botaoClicado);
+        function botaoClicado (){
+            let texto = botao.querySelector("span");
+            if(curtiu === false){
+            texto.textContent++;
+            curtiu = true;
+        }
+        else{
+            texto.textContent--;
+            curtiu = false;
+        }
+    }
+)
+</script>
 
 </html>
