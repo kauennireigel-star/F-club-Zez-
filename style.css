@@ -5,6 +5,7 @@ header {
     max-width: 800px;
     margin: 0 auto;
     border: 5px solid #e99898;
+    padding: 10px;
 }
 
 main {
@@ -15,6 +16,7 @@ main {
     margin: 0 auto;
     border: 5px solid #e99898;
     display: flex;
+    padding: 10px;
 }
 
 body {
@@ -31,12 +33,14 @@ footer {
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
+    padding: 10px;
 }
 
 .auto {
     font-weight: bold;
 }
-    img {
-        height: 30%;
-        width: 30%;
-    }
+
+img {
+    height: 30%;
+    width: 30%;
+}
